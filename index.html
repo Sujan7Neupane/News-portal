@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <!-- IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+</head>
+
+<body class="custom-bg-white custom-font-mukta">
+    <!-- Home Page Advertisin Space -->
+    <section class="custom-bg-dark py-4 text-center mt-0">
+        <div class="container custom-text-white">
+            <h2>HOME PAGE ADVERTISING SPACE</h2>
+        </div>
+    </section>
+
+    <!-- Header Ad Section -->
+    <section class="container">
+        <div class="custom-bg-primary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="m-0">(Expandable banner/Head push)</p>
+            <p class="custom-fs-30">1230px*100px</p>
+        </div>
+    </section>
+
+    <!-- Logo and more ad -->
+    <section class="container">
+        <div class="d-flex  justify-content-center align-items-center">
+            <div class="logo me-3">
+                <a href="index.html">
+                    <div class="logo-img">
+                        <img src="./assets/main-logo.png" alt="Logo Main" class="img-fluid">
+                    </div>
+                </a>
+                <!-- <div class="date custom-fs-16 custom-text-gray text-end">
+                    २८ साउन २०७८, बिहीबार
+                </div> -->
+            </div>
+            <div
+                class="custom-ad-banner-700 custom-bg-secondary d-none d-md-block text-center custom-text-white d-flex">
+                <p class="custom-fs-30 m-0"> (700px*70px) </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-md custom-bg-primary custom-fs-18 p-0 sticky-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="bar custom-text-white" id='bar'><i class="fas fa-bars"></i></div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">होमपेज</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="samachar.html">समाचार</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">विजनेश</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">जीवनशैली</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">सूचना प्रविधि</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">मनोरन्जन</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">प्रवास</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">खेलकुद</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex custom-text-white ">
+                <div class="search custom-bg-light-primary custom-transtion" id='search'>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="your-update custom-bg-dark-primary custom-transtion" id='navUpdateBtn'>
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="trending custom-bg-dark-primary d-flex custom-transtion" id="navTrendingBtn">
+                    <div class="img me-2">
+                        <img src="./assets/trendingIcon.png" alt="Trending IMAGE" />
+                    </div>
+                    <p class="m-0 d-none d-xl-block"> Trending</p>
+                </div>
+                <div class="language custom-bg-secondary custom-transtion">
+                    English
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap custom-bg-lightgray" id='search-wrap'>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <input type="date" name="from" id="from">
+                        </div>
+                        <div class="col-md-2 ">
+                            <input type="date" name="to" id="to">
+                        </div>
+                        <div class="col-md-3 ">
+                            <input type="text" name="keyword" id="keyword" placeholder="Keyword">
+                        </div>
+                        <div class="col-md-5 ">
+                            <button class="btn custom-bg-dark-primary">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+                    
+        <div class="slide-nav" id="slide-menu">
+            <div class="slide-menu" id="menu">
+                <ul class="menu">
+                    <a href="index.html">
+                        <li class="active">होमपेज</li>
+                    </a>
+                    <a href="samachar.html">
+                        <li>समाचार</li>
+                    </a>
+                    <a href="business.html">
+                        <li>विजनेश</li>
+                    </a>
+                    <a href="lifestyle.html">
+                        <li>जीवनशैली</li>
+                    </a>
+                    <a href="suchana.html">
+                        <li>सूचना प्रविधि</li>
+                    </a>
+                    <a href="entertaiment.html">
+                        <li>मनोरन्जन</li>
+                    </a>
+                    <a href="prabesh.html">
+                        <li>प्रवास</li>
+                    </a>
+                    <a href="sports.html">
+                        <li>खेलकुद</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fas fa-arrow-left left-arrow" id="left-arrow"></i>
+            <div class="black-layer" id="layer">
+            </div>
+
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- Trending Breadcrum -->
+    <!-- <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="custom-b-bottom d-none d-lg-block">
+        <div class="container">
+            <ol class="breadcrumb custom-fs-16 custom-text-dark m-0">
+                <li class="breadcrumb-item title" aria-current="page">TRENDING</li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># नेपाली चलचित्र</a></li>
+                <li class="breadcrumb-item "><a href="newsdetail.html"># खेलकुद </a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># नेपाल प्रहरी</a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># अपराध</a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># नेपाली कांग्रेस</a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># बलिउड</a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># केपी शर्मा ओली</a></li>
+                <li class="breadcrumb-item"><a href="newsdetail.html"># प्रचण्ड</a></li>
+            </ol>
+        </div>
+    </nav> -->
+
+
+    <!-- Ad Section -->
+    <section class="container">
+        <div class="custom-bg-secondary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="custom-fs-30">(1230px*100px)</p>
+        </div>
+    </section>
+
+    <!-- Breaking News -->
+    <section>
+        <div class="container">
+            <div class=" text-center py-4 px-3 custom-text-dark relative custom-b-before">
+                <h1 class="custom-fs-64 ">समाजवादी मोर्चाको नेतृत्व ६ महिने आलोपालो </h1>
+                <div class="post-info d-flex justify-content-center align-items-center">
+                    <div class="author-wrap me-3 d-flex align-items-center">
+                        <div class="author-img me-3"> <img src="./assets/okAuthor.png" alt="okAuthor"></div>
+                        <label>अनलाइनखबर</label>
+                    </div>
+                    <div class="post-time me-3">
+                        <i class="far fa-clock"></i>
+                        <span>२७ मिनेट अगाडि</span>
+                    </div>
+                    <div class="post-comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- News -->
+    <section>
+        <div class="container">
+            <div class="flex-box">
+                <div class="">
+                    <div class="news-wrap ">
+                        <div class="row">
+                            <div class="col-md-7 mb-3">
+                                <div class="soft-wrap custom-bs">
+                                    <div class="post-img">
+                                        <a href="newsdetail.html"><img src="./assets/IMG1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14">
+                                        <h2 class="custom-fs-35 "><a href="newsdetail.html" class='custom-text-dark'>पहिराेले मुग्लिन नारायणगढ सडकखण्ड अवरुद्</a> </h2>
+                                        <div class="post-date d-flex justify-content-center align-items-center">
+                                            <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                            <span class="ms-2">२७ मिनेट</span> <i class="far fa-comment-alt ms-3"></i>
+                                            <span class="ms-2">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="generic-post-wrap">
+                                            <div class="d-flex">
+                                                <div class="post-thumbnail me-3">
+                                                    <a href="newsdetail.html">
+                                                        <img src="./assets/IMG2.jpg" alt="img2">
+                                                    </a>
+                                                </div>
+                                                <div class="post-heading custom-fs-14 text-start p-0">
+                                                    <h2 class="custom-fs-18"><a href="newsdetail.html" class='custom-text-dark'>
+                                                        एसइईको ग्रेड वृद्धि परीक्षा साउन २६ र २७ गते हुने</a> </h2>
+                                                    <div
+                                                        class="post-date d-flex justify-content-start align-items-center">
+                                                        <i class="far fa-clock custom-text-secondary"></i>
+                                                        <span class="ms-2">२७ मिनेट</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="generic-post-wrap">
+                                            <div class="d-flex">
+                                                <div class="post-thumbnail me-3">
+                                                    <a href="newsdetail.html">
+                                                        <img src="./assets/IMG2.jpg" alt="img2">
+                                                    </a>
+                                                </div>
+                                                <div class="post-heading custom-fs-14 text-start p-0">
+                                                    <h2 class="custom-fs-18"><a href="newsdetail.html" class='custom-text-dark'>
+                                                        एसइईको ग्रेड वृद्धि परीक्षा साउन २६ र २७ गते हुने</a> </h2>
+                                                    <div
+                                                        class="post-date d-flex justify-content-start align-items-center">
+                                                        <i class="far fa-clock custom-text-secondary"></i>
+                                                        <span class="ms-2">२७ मिनेट</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="generic-post-wrap">
+                                            <div class="d-flex">
+                                                <div class="post-thumbnail me-3">
+                                                    <a href="newsdetail.html">
+                                                        <img src="./assets/IMG2.jpg" alt="img2">
+                                                    </a>
+                                                </div>
+                                                <div class="post-heading custom-fs-14 text-start p-0">
+                                                    <h2 class="custom-fs-18"><a href="newsdetail.html" class='custom-text-dark'>
+                                                        एसइईको ग्रेड वृद्धि परीक्षा साउन २६ र २७ गते हुने</a> </h2>
+                                                    <div
+                                                        class="post-date d-flex justify-content-start align-items-center">
+                                                        <i class="far fa-clock custom-text-secondary"></i>
+                                                        <span class="ms-2">२७ मिनेट</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="generic-post-wrap">
+                                            <div class="d-flex">
+                                                <div class="post-thumbnail me-3">
+                                                    <a href="newsdetail.html">
+                                                        <img src="./assets/IMG2.jpg" alt="img2">
+                                                    </a>
+                                                </div>
+                                                <div class="post-heading custom-fs-14 text-start p-0">
+                                                    <h2 class="custom-fs-18"><a href="newsdetail.html" class='custom-text-dark'>
+                                                        एसइईको ग्रेड वृद्धि परीक्षा साउन २६ र २७ गते हुने</a> </h2>
+                                                    <div
+                                                        class="post-date d-flex justify-content-start align-items-center">
+                                                        <i class="far fa-clock custom-text-secondary"></i>
+                                                        <span class="ms-2">२७ मिनेट</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="generic-post-wrap">
+                                            <div class="d-flex">
+                                                <div class="post-thumbnail me-3">
+                                                    <a href="newsdetail.html">
+                                                        <img src="./assets/IMG2.jpg" alt="img2">
+                                                    </a>
+                                                </div>
+                                                <div class="post-heading custom-fs-14 text-start p-0">
+                                                    <h2 class="custom-fs-18"><a href="newsdetail.html" class='custom-text-dark'>
+                                                        एसइईको ग्रेड वृद्धि परीक्षा साउन २६ र २७ गते हुने</a> </h2>
+                                                    <div
+                                                        class="post-date d-flex justify-content-start align-items-center">
+                                                        <i class="far fa-clock custom-text-secondary"></i>
+                                                        <span class="ms-2">२७ मिनेट</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="">
+                    <div class="aside-ad-300-150 custom-bg-secondary">
+                        (300px*150px)
+                    </div>
+                    <div class="aside-ad-300-150 custom-bg-secondary">
+                        (300px*150px)
+                    </div>
+                    <div class="aside-ad-300-150 custom-bg-secondary">
+                        (300px*150px)
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    
+    <!--Desh News -->
+    <section>
+        <div class="container">
+            <div class="flex-box">
+                <div class="news-wrap">
+                    <div class="cat-title custom-text-primary custom-bg-light">
+                        <div class="custom-fs-35">देश</div>
+                        <div class="right">
+                            <a href="newsdetail.html" class="me-2 active">देश
+                            </a>
+                            <a href="newsdetail.html">सबै
+                                <span class="dot-wrap">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="generic-post-wrap">
+                                <div class="soft-wrap">
+                                    <div class="post-img ">
+                                        <a href="newsdetail.html">
+                                            <img src="./assets/trial.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading p-0 custom-fs-18 pt-3 text-start">
+                                        <h2 class="custom-fs-35 ">
+                                            <a href="newsdetail.html" class="custom-text-dark">
+                                                गाडीको लाइसेन्स परीक्षा बागलुङबाटै
+                                            </a>
+                                        </h2>
+                                        <div
+                                            class="post-date d-flex justify-content-start align-items-center custom-text-gray custom-fs-16 mb-2">
+                                            <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                            <span class="ms-2">२७ मिनेट</span>
+                                        </div>
+                                        २३ असार, गण्डकी । एघार वर्षपछि पुनः बागलुङमा चारपाङ्ग्रे सवारी चालक अनुमतिपत्र (लाइसेन्स) परीक्षा सञ्चालनमा आउने भएको छ ।...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="generic-post-wrap">
+                                        <div class="soft-wrap">
+                                            <div class="post-img ">
+                                                <a href="newsdetail.html">
+                                                    <img src="img/Accident-300x169.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="post-heading p-0 custom-fs-18 pt-3 text-start">
+                                                <h2 class="custom-fs-20 ">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        मोरङको कानेपोखरी र लेटाङमा दुर्घटना, ३ जनाको मृत्यु
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center custom-text-gray custom-fs-16 mb-2">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="generic-post-wrap">
+                                        <div class="soft-wrap">
+                                            <div class="post-img ">
+                                                <a href="newsdetail.html">
+                                                    <img src="img/Accident-300x169.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="post-heading p-0 custom-fs-18 pt-3 text-start">
+                                                <h2 class="custom-fs-20 ">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        मोरङको कानेपोखरी र लेटाङमा दुर्घटना, ३ जनाको मृत्यु
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center custom-text-gray custom-fs-16 mb-2">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="generic-post-wrap">
+                                        <div class="soft-wrap">
+                                            <div class="post-img ">
+                                                <a href="newsdetail.html">
+                                                    <img src="img/Accident-300x169.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="post-heading p-0 custom-fs-18 pt-3 text-start">
+                                                <h2 class="custom-fs-20 ">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        मोरङको कानेपोखरी र लेटाङमा दुर्घटना, ३ जनाको मृत्यु
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center custom-text-gray custom-fs-16 mb-2">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="generic-post-wrap">
+                                        <div class="soft-wrap">
+                                            <div class="post-img ">
+                                                <a href="newsdetail.html">
+                                                    <img src="img/Accident-300x169.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="post-heading p-0 custom-fs-18 pt-3 text-start">
+                                                <h2 class="custom-fs-20 ">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        मोरङको कानेपोखरी र लेटाङमा दुर्घटना, ३ जनाको मृत्यु
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center custom-text-gray custom-fs-16 mb-2">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-wrap m-0">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap d-flex">
+                                        <div class="post-img img-sm me-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/arest-police.png" alt="" srcset="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-heading p-0">
+                                            <h2 class="custom-fs-18 text-start">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+                                                    गैँडा मारेको मुद्दामा फरार अभियुक्त पक्राउ
+                                                </a>
+                                                <div
+                                                    class="post-date d-flex justify-content-start align-items-center mb-2 custom-text-gray custom-fs-16">
+                                                    <i class="far fa-calendar-alt custom-text-secondary"></i>
+                                                    <span class="ms-2">२७ मिनेट</span>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <aside>
+                    <div class="side-card">
+                        <div class="title">
+                            ट्रेन्डिङ
+                        </div>
+                        <ul class="trending">
+                            <li class="custom-b-bottom custom-fs-18">
+                                <span class="custom-fs-50 custom-text-lightgray">१.</span>
+                                <a href="newsdetail.html" class="custom-text-gray custom-fw-600 ">आफ्नै वचनमा अडेनन् राष्ट्रपति, नियम विपरीत लिए ५५ लाख उपचार खर्च</a>
+                            </li>
+                            <li class="custom-b-bottom custom-fs-18">
+                                <span class="custom-fs-50 custom-text-lightgray">२.</span>
+                                <a href="newsdetail.html" class="custom-text-gray custom-fw-600 ">आफ्नै वचनमा अडेनन् राष्ट्रपति, नियम विपरीत लिए ५५ लाख उपचार खर्च</a>
+                            </li>
+                            <li class="custom-b-bottom custom-fs-18">
+                                <span class="custom-fs-50 custom-text-lightgray">३.</span>
+                                <a href="newsdetail.html" class="custom-text-gray custom-fw-600 ">आफ्नै वचनमा अडेनन् राष्ट्रपति, नियम विपरीत लिए ५५ लाख उपचार खर्च</a>
+                            </li>
+                            <li class="custom-b-bottom custom-fs-18">
+                                <span class="custom-fs-50 custom-text-lightgray">४.</span>
+                                <a href="newsdetail.html" class="custom-text-gray custom-fw-600 ">आफ्नै वचनमा अडेनन् राष्ट्रपति, नियम विपरीत लिए ५५ लाख उपचार खर्च</a>
+                            </li>
+                            <li class="custom-b-bottom custom-fs-18">
+                                <span class="custom-fs-50 custom-text-lightgray">५.</span>
+                                <a href="newsdetail.html" class="custom-text-gray custom-fw-600 ">आफ्नै वचनमा अडेनन् राष्ट्रपति, नियम विपरीत लिए ५५ लाख उपचार खर्च</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad section -->
+    <section class="container">
+        <div class="custom-bg-secondary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="custom-fs-30">1230px*100px</p>
+        </div>
+    </section>
+
+    <!-- Interview -->
+    <section class="custom-bg-white">
+        <div class="container">
+            <div class="flex-box">
+                <div class="news-wrap  interview-wrap ">
+                    <div class="cat-title custom-text-primary custom-bg-light">
+                        <div class="custom-fs-35">अन्तर्वार्ता</div>
+                        <div class="right">
+                            <a href="newsdetail.html">सबै
+                                <span class="dot-wrap">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="interview mb-3">
+                        <div class="row">
+                            <div class="col-md-7 pe-auto pe-md-0">
+                                <div class="cvr-text custom-bg-primary custom-fs-35 custom-fw-600">
+                                    <i class="fas fa-quote-left"></i>
+                                    <a href="newsdetail.html">
+                                        ‘म कुनै गुटको हुन सकिनँ’
+                                    </a>
+                                    <br>
+                                    <h6 class="text-light">-महेश आचार्य </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ps-auto ps-md-0">
+                                <div class="img-wrap">
+                                    <a href="newsdetail.html"><img src="./assets/interview.jpg" alt=""
+                                            class="img-fluid"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="generic-post-wrap">
+                                <div class="soft-wrap row">
+                                    <div class="col-4">
+
+                                        <div class="post-img ">
+                                            <a href="newsdetail.html">
+                                                <img src="img/French-Ambassdor-Franswa-Jevey-1-300x122.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+
+                                        <div class="post-info custom-fs-18 ">
+                                            <h2 class="custom-fs-24">
+                                                <a href="newsdetail.html" class="custom-text-dark">‘नेपालमा लगानीका थुप्रै अवसर
+                                                    छन्’</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="generic-post-wrap">
+                                <div class="soft-wrap row">
+                                    <div class="col-4">
+
+                                        <div class="post-img ">
+                                            <a href="newsdetail.html">
+                                                <img src="img/French-Ambassdor-Franswa-Jevey-1-300x122.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+
+                                        <div class="post-info custom-fs-18 ">
+                                            <h2 class="custom-fs-24">
+                                                <a href="newsdetail.html" class="custom-text-dark">‘नेपालमा लगानीका थुप्रै अवसर
+                                                    छन्’</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="generic-post-wrap">
+                                <div class="soft-wrap row">
+                                    <div class="col-4">
+
+                                        <div class="post-img ">
+                                            <a href="newsdetail.html">
+                                                <img src="img/French-Ambassdor-Franswa-Jevey-1-300x122.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+
+                                        <div class="post-info custom-fs-18 ">
+                                            <h2 class="custom-fs-24">
+                                                <a href="newsdetail.html" class="custom-text-dark">‘नेपालमा लगानीका थुप्रै अवसर
+                                                    छन्’</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="generic-post-wrap">
+                                <div class="soft-wrap row">
+                                    <div class="col-4">
+
+                                        <div class="post-img ">
+                                            <a href="newsdetail.html">
+                                                <img src="img/French-Ambassdor-Franswa-Jevey-1-300x122.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+
+                                        <div class="post-info custom-fs-18 ">
+                                            <h2 class="custom-fs-24">
+                                                <a href="newsdetail.html" class="custom-text-dark">‘नेपालमा लगानीका थुप्रै अवसर
+                                                    छन्’</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <aside>
+                    <div class="side-card">
+                        <div class="title">
+                            धेरै कमेन्ट गरिएका
+                        </div>
+                        <ul class="most-commented">
+                            <li>
+                                <span class="id">८३
+                                    <span>प्रतिक्रिया</span>
+                                </span>
+                                <a href="newsdetail.html" class="custom-fs-18">
+                                    चिकित्सकले आफ्नो विज्ञताभन्दा बाहिरको काम गर्न मिल्छ ? </a>
+                            </li>
+                            <li>
+                                <span class="id">८३
+                                    <span>प्रतिक्रिया</span>
+                                </span>
+                                <a href="newsdetail.html" class="custom-fs-18">
+                                    चिकित्सकले आफ्नो विज्ञताभन्दा बाहिरको काम गर्न मिल्छ ? </a>
+                            </li>
+                            <li>
+                                <span class="id">८३
+                                    <span>प्रतिक्रिया</span>
+                                </span>
+                                <a href="newsdetail.html" class="custom-fs-18">
+                                    चिकित्सकले आफ्नो विज्ञताभन्दा बाहिरको काम गर्न मिल्छ ? </a>
+                            </li>
+                            <li>
+                                <span class="id">८३
+                                    <span>प्रतिक्रिया</span>
+                                </span>
+                                <a href="newsdetail.html" class="custom-fs-18">
+                                    चिकित्सकले आफ्नो विज्ञताभन्दा बाहिरको काम गर्न मिल्छ ? </a>
+                            </li>
+                            <li>
+                                <span class="id">८३
+                                    <span>प्रतिक्रिया</span>
+                                </span>
+                                <a href="newsdetail.html" class="custom-fs-18">
+                                   चिकित्सकले आफ्नो विज्ञताभन्दा बाहिरको काम गर्न मिल्छ ? </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad section -->
+    <section class="container">
+        <div class="custom-bg-secondary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="custom-fs-30">1230px*100px</p>
+        </div>
+    </section>
+
+    <!-- Ad section -->
+    <section class="container custom-bg-white">
+        <div class="custom-bg-primary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="custom-fs-30">1230px*100px</p>
+        </div>
+    </section>
+
+    <!-- Lifestyle -->
+    <section class="custom-bg-white">
+        <div class="container">
+            <div class="cat-title custom-text-primary custom-bg-light">
+                <div class="custom-fs-35">स्वास्थ्य-जीवनशैली</div>
+                <div class="right">
+                    <a href="newsdetail.html" class="more me-2">आयुर्वेद
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">कभर स्टोरी
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">खाना
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">गृह सजावट
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">फिटनेस
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">फेसन
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">यौन स्वास्थ्य
+                    </a>
+                    <a href="newsdetail.html" class="more me-2">सौन्दर्य
+                    </a>
+                    <a href="newsdetail.html">सबै
+                        <span class="dot-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lifestyle d-grid ">
+                <div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap">
+                            <div class="post-img mb-3" style="height: 440px;">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Threads_logo.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark custom-fs-35">
+                                        थ्रेड्स सुरु भएको ७ घण्टामै १ करोड प्रयोगकर्ता, कसरी प्रयोग गर्ने ?
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="img/wp3596070-300x188.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        सुपाच्य खान, सक्रिय दिनचर्या र सकारात्मक मन
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="img/wp3596070-300x188.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        सुपाच्य खान, सक्रिय दिनचर्या र सकारात्मक मन
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="img/wp3596070-300x188.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        सुपाच्य खान, सक्रिय दिनचर्या र सकारात्मक मन
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="img/wp3596070-300x188.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        सुपाच्य खान, सक्रिय दिनचर्या र सकारात्मक मन
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="img/wp3596070-300x188.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        सुपाच्य खान, सक्रिय दिनचर्या र सकारात्मक मन
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap">
+                            <div class="post-img mb-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/balen.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                                <a href="newsdetail.html" class="custom-text-dark">
+                                     काठमाडौं महानगरपालिकाका मेयर बालेन शाहले तीनकुने पार्कको विषयलाई लिएर राष्ट्रपति विद्यादेवी भण्डारी र पूर्वप्रधानमन्त्री माधवकुमार नेपालमाथि प्रश्न गरेका छन् ।
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-25 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap">
+                            <div class="post-img mb-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/balen.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                                <a href="newsdetail.html" class="custom-text-dark">
+                                     काठमाडौं महानगरपालिकाका मेयर बालेन शाहले तीनकुने पार्कको विषयलाई लिएर राष्ट्रपति विद्यादेवी भण्डारी र पूर्वप्रधानमन्त्री माधवकुमार नेपालमाथि प्रश्न गरेका छन् ।
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-25 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sport -->
+    <section class="custom-bg-white">
+        <div class="container">
+            <div class="flex-box">
+                <div class="news-wrap  interview-wrap">
+                    <div class="cat-title custom-text-primary custom-bg-light">
+                        <div class="custom-fs-35">अन्तर्वार्ता</div>
+                        <div class="right">
+                            <a href="newsdetail.html">सबै
+                                <span class="dot-wrap">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap">
+                                        <div class="post-img mb-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Vinicius-Jr.jpg" alt="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-35">
+                                                <a href="newsdetail.html" class="custom-text-dark">रियलका फरवार्ड भिनिसियसकै नाममा रंगभेदी कानुन</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap row">
+                                        <div class="col-5">
+
+                                            <div class="post-img me-3">
+                                                <a href="newsdetail.html">
+                                                    <img src="./assets/psg-coach.jpg" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="post-info custom-fs-35 ">
+                                                <h2 class="custom-fs-20">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        एनरिक पीएसजीको मुख्य प्रशिक्षक नियुक्त</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap row">
+                                        <div class="col-5">
+
+                                            <div class="post-img me-3">
+                                                <a href="newsdetail.html">
+                                                    <img src="./assets/psg-coach.jpg" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="post-info custom-fs-35 ">
+                                                <h2 class="custom-fs-20">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        एनरिक पीएसजीको मुख्य प्रशिक्षक नियुक्त</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap">
+                                        <div class="post-img mb-3">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/cricket.jpg" alt="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-35">
+                                                <a href="newsdetail.html" class="custom-text-dark">विश्वकप छनोट खेलेर राष्ट्रिय क्रिकेट टिम स्वदेश फिर्ता</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap row">
+                                        <div class="col-5">
+
+                                            <div class="post-img me-3">
+                                                <a href="newsdetail.html">
+                                                    <img src="./assets/psg-coach.jpg" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="post-info custom-fs-35 ">
+                                                <h2 class="custom-fs-20">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        एनरिक पीएसजीको मुख्य प्रशिक्षक नियुक्त</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="generic-post-wrap">
+                                    <div class="soft-wrap row">
+                                        <div class="col-5">
+
+                                            <div class="post-img me-3">
+                                                <a href="newsdetail.html">
+                                                    <img src="./assets/psg-coach.jpg" alt="" class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+
+                                            <div class="post-info custom-fs-35 ">
+                                                <h2 class="custom-fs-20">
+                                                    <a href="newsdetail.html" class="custom-text-dark">
+                                                        एनरिक पीएसजीको मुख्य प्रशिक्षक नियुक्त</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="side-card">
+                        <div class="title">
+                            सिफारिस
+                        </div>
+                        <ul class="most-recomended">
+                            <div class="generic-post-wrap mt-4">
+                                <div class="soft-wrap row">
+                                    <div class="col-5">
+
+                                        <div class="post-img">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Aayush-Kunwar.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-20">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+
+                                                    प्रधानन्यायाधीश जबराको रणनीति : आफू जोडिएको मुद्दा सार्दै जाने,
+                                                    बाँकी मुद्दा हेर्ने</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="generic-post-wrap mt-4">
+                                <div class="soft-wrap row">
+                                    <div class="col-5">
+
+                                        <div class="post-img">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Aayush-Kunwar.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-20">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+
+                                                    प्रधानन्यायाधीश जबराको रणनीति : आफू जोडिएको मुद्दा सार्दै जाने,
+                                                    बाँकी मुद्दा हेर्ने</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="generic-post-wrap mt-4">
+                                <div class="soft-wrap row">
+                                    <div class="col-5">
+
+                                        <div class="post-img">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Aayush-Kunwar.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-20">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+
+                                                    प्रधानन्यायाधीश जबराको रणनीति : आफू जोडिएको मुद्दा सार्दै जाने,
+                                                    बाँकी मुद्दा हेर्ने</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="generic-post-wrap mt-4">
+                                <div class="soft-wrap row">
+                                    <div class="col-5">
+
+                                        <div class="post-img">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Aayush-Kunwar.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-20">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+
+                                                    प्रधानन्यायाधीश जबराको रणनीति : आफू जोडिएको मुद्दा सार्दै जाने,
+                                                    बाँकी मुद्दा हेर्ने</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="generic-post-wrap mt-4">
+                                <div class="soft-wrap row">
+                                    <div class="col-5">
+
+                                        <div class="post-img">
+                                            <a href="newsdetail.html">
+                                                <img src="./assets/Aayush-Kunwar.jpg" alt=""
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+
+                                        <div class="post-info custom-fs-35 ">
+                                            <h2 class="custom-fs-20">
+                                                <a href="newsdetail.html" class="custom-text-dark">
+
+                                                    प्रधानन्यायाधीश जबराको रणनीति : आफू जोडिएको मुद्दा सार्दै जाने,
+                                                    बाँकी मुद्दा हेर्ने</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wonder World Section -->
+    <section class="custom-bg-white">
+        <div class="container">
+            <div class="cat-title custom-text-primary custom-bg-light">
+                <div class="custom-fs-35">विचित्र संसार</div>
+                <div class="right">
+                    <a href="newsdetail.html">सबै
+                        <span class="dot-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="world-wonder d-grid ">
+                <div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap">
+                            <div class="post-img wide-img mb-3" style="height: 440px;">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Nepali-Khana.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                                <div class="post-heading">
+                                    <h2 class="custom-fs-18 text-start">
+                                        <a href="newsdetail.html" class="custom-text-dark custom-fs-35">
+                                            दीर्घायुका लागि कस्तो भोजन गर्ने ?
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Srichchha-Pradhan.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        ‘सौन्दर्य प्रतियोगिता शरीरको आकार र तौलको मात्र मापन होइन’
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Srichchha-Pradhan.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        ‘सौन्दर्य प्रतियोगिता शरीरको आकार र तौलको मात्र मापन होइन’
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Srichchha-Pradhan.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        ‘सौन्दर्य प्रतियोगिता शरीरको आकार र तौलको मात्र मापन होइन’
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Srichchha-Pradhan.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-dark">
+                                        ‘सौन्दर्य प्रतियोगिता शरीरको आकार र तौलको मात्र मापन होइन’
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="side-card mb-0">
+                        <ul class="business-side">
+                            <li><a href="newsdetail.html">
+                                    शाओमीले वीरगञ्जमा आफ्नो अधिकृत सेवा केन्द्रको लन्च गर्दै
+                                </a></li>
+                            <li><a href="newsdetail.html">
+                                    शाओमीले वीरगञ्जमा आफ्नो अधिकृत सेवा केन्द्रको लन्च गर्दै
+                                </a></li>
+                            <li><a href="newsdetail.html">
+                                    शाओमीले वीरगञ्जमा आफ्नो अधिकृत सेवा केन्द्रको लन्च गर्दै
+                                </a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="custom-bg-black video py-5">
+        <div class="container">
+            <div class="cat-title custom-text-primary">
+                <div class="custom-fs-35 custom-text-lightgray">भिडियो</div>
+                <div class="right">
+                    <a href="newsdetail.html" class="custom-text-lightgray ">सबै
+                        <span class="dot-wrap">
+                            <span class="custom-bg-light"></span>
+                            <span class="custom-bg-light"></span>
+                            <span class="custom-bg-light"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-box">
+                <div class="news-wrap mb-3">
+                    <div class="video-section">
+                        <img src="./assets/Rena-Majgaiya.jpg" alt="" class="img-fluid">
+                        <div class="title custom-fs-35 ">
+                            <a href="newsdetail.html" class="custom-text-lightgray">
+                                <i class="fas fa-play-circle"></i>
+                                ‘अहिले युट्युबमा भ्युज नकिनी सुखै छैन’
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Rena-Majgaiya.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-lightgray">
+                                        पाइलट रेनालाई कसरी मिस नेपालमा भाग लिने सोच आयो ?
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Rena-Majgaiya.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-lightgray">
+                                        पाइलट रेनालाई कसरी मिस नेपालमा भाग लिने सोच आयो ?
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generic-post-wrap">
+                        <div class="soft-wrap d-flex">
+                            <div class="post-img img-sm me-3">
+                                <a href="newsdetail.html">
+                                    <img src="./assets/Rena-Majgaiya.jpg" alt="" srcset="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post-heading p-0">
+                                <h2 class="custom-fs-18 text-start">
+                                    <a href="newsdetail.html" class="custom-text-lightgray">
+                                        पाइलट रेनालाई कसरी मिस नेपालमा भाग लिने सोच आयो ?
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ramro Nepal -->
+    <section class="custom-bg-white">
+        <div class="container">
+            <div class="cat-title custom-text-primary custom-bg-light">
+                <div class="custom-fs-35">विचित्र संसार</div>
+                <div class="right">
+                    <a href="newsdetail.html">सबै
+                        <span class="dot-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="soft-wrap custom-bs">
+                        <div class="post-img" style="    height: 170px;">
+                            <a href="newsdetail.html"><img src="./assets/makalu-barun-7-1-300x161.jpg" alt=""></a>
+                        </div>
+                        <div class="post-heading custom-fs-18 d-flex custom-text-gray">
+                            <i class="fas fa-file-image me-3 "></i>
+                            <h2 class="custom-fs-18 "><a href="newsdetail.html" class='custom-text-gray'>मकालु-बरुण पदयात्राको
+                                    अनुभूति</a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="soft-wrap custom-bs">
+                        <div class="post-img" style="    height: 170px;">
+                            <a href="newsdetail.html"><img src="./assets/makalu-barun-7-1-300x161.jpg" alt=""></a>
+                        </div>
+                        <div class="post-heading custom-fs-18 d-flex custom-text-gray">
+                            <i class="fas fa-file-image me-3 "></i>
+                            <h2 class="custom-fs-18 "><a href="newsdetail.html" class='custom-text-gray'>मकालु-बरुण पदयात्राको
+                                    अनुभूति</a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="soft-wrap custom-bs">
+                        <div class="post-img" style="    height: 170px;">
+                            <a href="newsdetail.html"><img src="./assets/makalu-barun-7-1-300x161.jpg" alt=""></a>
+                        </div>
+                        <div class="post-heading custom-fs-18 d-flex custom-text-gray">
+                            <i class="fas fa-file-image me-3 "></i>
+                            <h2 class="custom-fs-18 "><a href="newsdetail.html" class='custom-text-gray'>मकालु-बरुण पदयात्राको
+                                    अनुभूति</a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="soft-wrap custom-bs">
+                        <div class="post-img" style="    height: 170px;">
+                            <a href="newsdetail.html"><img src="./assets/makalu-barun-7-1-300x161.jpg" alt=""></a>
+                        </div>
+                        <div class="post-heading custom-fs-18 d-flex custom-text-gray">
+                            <i class="fas fa-file-image me-3 "></i>
+                            <h2 class="custom-fs-18 "><a href="newsdetail.html" class='custom-text-gray'>मकालु-बरुण पदयात्राको
+                                    अनुभूति</a> </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-bg-primary custom-text-lightgray footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-md-5 d-flex">
+                        <div class="ftrlogo d-none d-sm-block">
+                            <a href="index.html">
+                                <img src="img/oknewLogo.png" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-title">
+                                <div class="img-wrap">
+                                    <a href="index.html">
+                                        <img src="./assets/footer-logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="footer-contactifo custom-fs-16">
+                                +977-1-4780076, +977-1-4786489
+                                <br>
+                                news@onlinekhabar.com
+                                <br>
+                                अध्यक्ष तथा प्रबन्ध निर्देशक: धर्मराज भुसाल
+                                <br>
+                                प्रधान सम्पादकः शिव गाउँले
+                                <br>
+                                सूचना विभाग दर्ता नं. २१४ / ०७३–७४
+                                <br>
+                            </p>
+                            <ul class="footer-social d-flex">
+                                <li>
+                                    <a href="newsdetail.html"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="newsdetail.html"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="newsdetail.html"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="newsdetail.html"><i class="fab fa-viber"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex">
+                                <div class="footer-items">
+                                    <h2>समाचार</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="newsdetail.html">समाज</a> </li>
+                                        <li><a href="newsdetail.html">विचार/ब्लग</a> </li>
+                                        <li><a href="newsdetail.html">साहित्य</a> </li>
+                                        <li><a href="newsdetail.html">अन्तर्वार्ता</a> </li>
+                                        <li><a href="newsdetail.html">खेलकुद़़</a> </li>
+                                        <li><a href="newsdetail.html">जीवनशैली/स्वास्थ्य</a> </li>
+                                        <li><a href="newsdetail.html">प्रवास</a> </li>
+                                        <li><a href="">अन्तर्राष्ट्रिय</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-items">
+                                    <h2>बिजनेस</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="newsdetail.html">बजार</a> </li>
+                                        <li><a href="newsdetail.html">पर्यटन</a> </li>
+                                        <li><a href="newsdetail.html">रोजगार</a> </li>
+                                        <li><a href="newsdetail.html">बैँक / वित्त</a> </li>
+                                        <li><a href="newsdetail.html">अटो</a> </li>
+                                        <li><a href="newsdetail.html">सूचना-प्रविधि</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 d-flex">
+                                <div class="footer-items">
+                                    <h2>मनोरञ्जन</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="newsdetail.html">
+                                                ब्लोअप</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                गसिप</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                बलिउड /</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                हलिउड</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                भिडियो</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                ताजा समाचार</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="footer-items">
+                                    <h2>विशेष श्रृंखला</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="newsdetail.html">
+
+                                                संसद विघटन</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                विशेष</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                फ्रन्टलाइन</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                हिरोज्</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                चुनावी बहस</li>
+                                        </a>
+                                        <li><a href="newsdetail.html">
+
+                                                निर्वाचन २०७४</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-footer custom-bg-dark-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/about-us/">हाम्रोबारे</a> <a href="newsdetail.html">प्रयोगका शर्त </a> <a
+                            href="/advertise-with-us/">विज्ञापन</a> <a href="/privacy-policy/">Privacy Policy</a> <a
+                            href="/contact-us/">सम्पर्क</a>
+                    </div>
+                    <div class="col-md-6 text-start text-md-end">
+                        <p>© २००६-२०२१ Onlinekhabar.com सर्वाधिकार सुरक्षित
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
